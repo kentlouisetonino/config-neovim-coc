@@ -24,6 +24,7 @@ call plug#end()
 
 nmap<F8> :TagbarToggle<CR>
 nmap<F9> :TerminalVSplit bash<CR>
+nmap<F10> :q<CR>
 
 nnoremap <C-f> :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
