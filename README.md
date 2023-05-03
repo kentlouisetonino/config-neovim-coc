@@ -3,13 +3,14 @@
 
 <br />
 <br />
+<br />
 
 
 
 ## Setup
 > - Run the following commands below.
 
-```bash
+```plaintext
 cd
 cd .config/nvim
 touch init.vim
@@ -19,7 +20,7 @@ touch init.vim
 
 > - To locate the `coc.nvim` change directory to the following below.
 
-```bash
+```plaintext
 cd ~/.local/share/nvim/plugged/coc.nvim
 yarn install
 yarn build
@@ -34,7 +35,7 @@ yarn build
 ## Basic Keyboard Commands
 > - Copy and pasting multiple lines.
 
-```vim
+```plaintext
 Shift-V             : (Highlight) This will allow to begin highlighting a line.
 Arrow down / up     : (Multiple highlight) This will allow you to highlight multiple lines.
 y                   : (Copy) Pull the lines into a buffer.
