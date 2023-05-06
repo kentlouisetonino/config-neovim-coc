@@ -42,3 +42,11 @@ y                   : (Copy) Pull the lines into a buffer.
 p                   : (Paste) Move to the line where you want to paste the copied lines.
 ```
 
+> - Creating a new file in NerdTree.
+
+```plaintext
+m     : This bring up the NerdTree Filesystem menu.
+a     : This allows to create a new file.
+d     : This allows to delete a file.
+```
+
