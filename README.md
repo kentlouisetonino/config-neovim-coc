@@ -16,7 +16,11 @@ cd .config/nvim
 touch init.vim
 ```
 
+<br />
+
 > - Copy the `init.vim` content.
+
+<br />
 
 > - To locate the `coc.nvim` change directory to the following below.
 
@@ -41,6 +45,8 @@ Arrow down / up     : (Multiple highlight) This will allow you to highlight mult
 y                   : (Copy) Pull the lines into a buffer.
 p                   : (Paste) Move to the line where you want to paste the copied lines.
 ```
+
+<br />
 
 > - Creating a new file in NerdTree.
 
