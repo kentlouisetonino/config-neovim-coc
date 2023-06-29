@@ -43,4 +43,5 @@ inoremap <silent><expr> <Tab>
 
 let g:NERDTreeDirArrowExpandable="+"
 let g:NERDTreeDirArrowCollapsible="~"
+let g:loaded_matchparen=1
 
