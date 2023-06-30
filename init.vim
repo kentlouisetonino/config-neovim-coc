@@ -30,7 +30,7 @@ nnoremap <C-f> :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 
-" * Use <tab> to trigger completion and navigate to the next complete item.
+# * Use <tab> to trigger completion and navigate to the next complete item.
 function! CheckBackspace() abort
   let col = col('.') - 1
   return !col || getline('.')[col - 1]  =~# '\s'
@@ -43,5 +43,7 @@ inoremap <silent><expr> <Tab>
 
 let g:NERDTreeDirArrowExpandable="+"
 let g:NERDTreeDirArrowCollapsible="~"
+
+# * Disable matching parenthesis highlighting.
 let g:loaded_matchparen=1
 
