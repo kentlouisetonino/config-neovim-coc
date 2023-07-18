@@ -56,3 +56,12 @@ a     : This allows to create a new file.
 d     : This allows to delete a file.
 ```
 
+<br />
+
+> - Jumping to the top, middle, or bottom.
+```plaintext
+T     : Jump to the top.
+M     : Jump to the middle.
+L     : Jump to the bottom.
+```
+
