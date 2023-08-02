@@ -60,7 +60,7 @@ d     : This allows to delete a file.
 
 > - Jumping to the top, middle, or bottom.
 ```plaintext
-T     : Jump to the top.
+H     : Jump to the top.
 M     : Jump to the middle.
 L     : Jump to the bottom.
 ```
