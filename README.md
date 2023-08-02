@@ -63,5 +63,12 @@ d     : This allows to delete a file.
 H     : Jump to the top.
 M     : Jump to the middle.
 L     : Jump to the bottom.
+``` 
+
+<br />
+
+> - Other commands.
+```plaintext
+dd    : Delete a line.
 ```
 
