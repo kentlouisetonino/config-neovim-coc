@@ -72,3 +72,6 @@ L     : Jump to the bottom.
 dd    : Delete a line.
 ```
 
+<br />
+
+> - VIM cheat sheet: https://vim.rtorr.com/
