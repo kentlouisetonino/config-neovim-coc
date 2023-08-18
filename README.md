@@ -37,41 +37,16 @@ yarn build
 
 
 ## Basic Keyboard Commands
-> - Copy and pasting multiple lines.
-
-```plaintext
-Shift-V             : (Highlight) This will allow to begin highlighting a line.
-Arrow down / up     : (Multiple highlight) This will allow you to highlight multiple lines.
-y                   : (Copy) Pull the lines into a buffer.
-p                   : (Paste) Move to the line where you want to paste the copied lines.
-```
-
-<br />
-
-> - Creating a new file in NerdTree.
+> - NerdTree basic commands.
 
 ```plaintext
 m     : This bring up the NerdTree Filesystem menu.
 a     : This allows to create a new file.
 d     : This allows to delete a file.
-```
-
-<br />
-
-> - Jumping to the top, middle, or bottom.
-```plaintext
-H     : Jump to the top.
-M     : Jump to the middle.
-L     : Jump to the bottom.
-``` 
-
-<br />
-
-> - Other commands.
-```plaintext
-dd    : Delete a line.
+mm    : This allows renaming a file.
 ```
 
 <br />
 
 > - VIM cheat sheet: https://vim.rtorr.com/
+
