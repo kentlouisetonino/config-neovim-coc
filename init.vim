@@ -30,6 +30,9 @@ nnoremap <C-f> :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 
+" * Use <space>-d to show the definition.
+nnoremap <silent><nowait> <space>d :call CocAction('jumpDefinition', v:false)<CR>
+
 " * Use <tab> to trigger completion and navigate to the next complete item.
 function! CheckBackspace() abort
   let col = col('.') - 1
