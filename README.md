@@ -44,9 +44,11 @@ m     : This bring up the NerdTree Filesystem menu.
 a     : This allows to create a new file.
 d     : This allows to delete a file.
 mm    : This allows renaming a file.
+t     : Open a new tab.
+gt    : Switch to next tab.
+gT    : Switch to previous tab.
 ```
 
 <br />
 
 > - VIM cheat sheet: https://vim.rtorr.com/
-
