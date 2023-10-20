@@ -42,9 +42,9 @@ nnoremap <silent><nowait> <space>d :call CocAction('jumpDefinition', v:false)<CR
  endfunction
 
 inoremap <silent><expr> <Tab>
-      \ coc#pum#visible() ? coc#pum#next(1) :
-      \ CheckBackspace() ? "\<Tab>" :
-      \ coc#refresh()
+     \ coc#pum#visible() ? coc#pum#next(1) :
+     \ CheckBackspace() ? "\<Tab>" :
+     \ coc#refresh()
 
 let g:NERDTreeDirArrowExpandable="+"
 let g:NERDTreeDirArrowCollapsible="~"
@@ -56,3 +56,4 @@ let g:loaded_matchparen=1
 " * Needed for go lang.
 let g:deoplete#enable_at_startup = 1
 let g:deoplete_completion_trigger = "tab"
+
