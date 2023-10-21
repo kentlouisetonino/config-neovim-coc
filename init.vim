@@ -20,8 +20,6 @@ Plug 'https://github.com/tc50cal/vim-terminal'
 Plug 'https://github.com/terryma/vim-multiple-cursors'
 Plug 'https://github.com/preservim/tagbar'
 Plug 'https://github.com/neoclide/coc.nvim'
-Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 call plug#end()
 
 nmap<F8> :TagbarToggle<CR>
@@ -32,15 +30,18 @@ nnoremap <C-f> :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 
-" * Use <space>-d to show the definition.
+" * COC: Use <space>-d to show the definition.
 nnoremap <silent><nowait> <space>d :call CocAction('jumpDefinition', v:false)<CR>
+" * COC: auto import on save.
+autocmd BufWritePre *.go :silent call CocAction('runCommand', 'editor.action.organizeImport')
 
-" * Use <tab> to trigger completion and navigate to the next complete item.
+" * COC: Use <tab> to trigger completion and navigate to the next complete item.
  function! CheckBackspace() abort
    let col = col('.') - 1
    return !col || getline('.')[col - 1]  =~# '\s'
  endfunction
 
+" * COC: Support for tab.
 inoremap <silent><expr> <Tab>
      \ coc#pum#visible() ? coc#pum#next(1) :
      \ CheckBackspace() ? "\<Tab>" :
@@ -51,9 +52,3 @@ let g:NERDTreeDirArrowCollapsible="~"
 
 " * Disable matching parenthesis highlighting.
 let g:loaded_matchparen=1
-
-" * Deoplete config.
-" * Needed for go lang.
-let g:deoplete#enable_at_startup = 1
-let g:deoplete_completion_trigger = "tab"
-
