@@ -30,11 +30,13 @@ nmap<F9> :q<CR>
 nmap <F8> <c-w><
 
 " * This is for the Ctrl + w>
-" *  This adjust the width of the pane to the left.
+" * This adjust the width of the pane to the left.
 nmap <F7> <c-w>>
 
+" * NERDTREE: Focus back to nerdtree navigation.
 nnoremap <C-f> :NERDTreeFocus<CR>
-nnoremap <C-n> :NERDTree<CR>
+
+" * NERDTREE: Toggle the nerdtree.
 nnoremap <C-t> :NERDTreeToggle<CR>
 
 " * COC: Use <space>-d to show the definition.
