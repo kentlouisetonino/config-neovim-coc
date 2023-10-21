@@ -22,6 +22,9 @@ Plug 'https://github.com/preservim/tagbar'
 Plug 'https://github.com/neoclide/coc.nvim'
 call plug#end()
 
+" * Exit.
+nmap<F9> :q<CR>
+
 " * This is for the Ctrl + w<
 " * This adjust the width of pane to the right.
 nmap <F8> <c-w><
@@ -29,9 +32,6 @@ nmap <F8> <c-w><
 " * This is for the Ctrl + w>
 " *  This adjust the width of the pane to the left.
 nmap <F7> <c-w>>
-
-" * Exit.
-nmap<F10> :q<CR>
 
 nnoremap <C-f> :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
