@@ -1,2 +1,5 @@
-"suggest.noselect": "true"
+{
+  "suggest.noselect": true,
+  "coc.preferences.formatOnSaveFileTypes": ["ts", "tsc"]
+}
 

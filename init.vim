@@ -21,6 +21,7 @@ Plug 'https://github.com/terryma/vim-multiple-cursors'
 Plug 'https://github.com/preservim/tagbar'
 Plug 'https://github.com/neoclide/coc.nvim'
 Plug 'https://github.com/clangd/coc-clangd'
+Plug 'https://github.com/darrikonn/vim-gofmt', { 'do': ':GoUpdateBinaries' }
 call plug#end()
 
 " * Exit.
