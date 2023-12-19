@@ -63,3 +63,4 @@ let g:NERDTreeDirArrowCollapsible="~"
 
 " * Disable matching parenthesis highlighting.
 let g:loaded_matchparen=1
+
