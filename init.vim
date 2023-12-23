@@ -22,6 +22,9 @@ Plug 'https://github.com/preservim/tagbar'
 Plug 'https://github.com/neoclide/coc.nvim'
 Plug 'https://github.com/clangd/coc-clangd'
 Plug 'https://github.com/darrikonn/vim-gofmt', { 'do': ':GoUpdateBinaries' }
+Plug 'https://github.com/nvim-telescope/telescope.nvim'
+Plug 'https://github.com/fannheyward/telescope-coc.nvim'
+Plug 'https://github.com/nvim-lua/plenary.nvim'
 call plug#end()
 
 " * Exit.
@@ -63,4 +66,16 @@ let g:NERDTreeDirArrowCollapsible="~"
 
 " * Disable matching parenthesis highlighting.
 let g:loaded_matchparen=1
+
+lua << EOF
+require("telescope").setup({
+  extensions = {
+    coc = {
+        theme = 'ivy',
+        prefer_locations = true, -- always use Telescope locations to preview definitions/declarations/implementations etc
+    }
+  },
+})
+require('telescope').load_extension('coc')
+EOF
 
