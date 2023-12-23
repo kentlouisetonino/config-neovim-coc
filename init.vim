@@ -25,7 +25,11 @@ Plug 'https://github.com/darrikonn/vim-gofmt', { 'do': ':GoUpdateBinaries' }
 Plug 'https://github.com/nvim-telescope/telescope.nvim'
 Plug 'https://github.com/fannheyward/telescope-coc.nvim'
 Plug 'https://github.com/nvim-lua/plenary.nvim'
+Plug 'https://github.com/dasupradyumna/midnight.nvim'
 call plug#end()
+
+" Text editor color.
+colorscheme midnight
 
 " Exit.
 nmap <F9> :q<CR>
