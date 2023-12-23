@@ -60,5 +60,6 @@ gT    : Switch to previous tab.
 gd          : Definition.
 gr          : References.
 Ctrl + o    : Go back to previous file.
+\ff         : Open telescope and find files.
 ```
 
