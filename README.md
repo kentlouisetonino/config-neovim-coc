@@ -1,6 +1,9 @@
 ## Description
 > - This is my default neovim config.
 
+![Screenshot from 2023-12-23 19-11-37](https://github.com/kentlouisetonino/config-nvim/assets/69438999/7e8cfd05-8dc7-40c5-898f-2ca4ddce510f)
+
+
 <br />
 <br />
 <br />
