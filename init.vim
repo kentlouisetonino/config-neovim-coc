@@ -28,30 +28,7 @@ Plug 'https://github.com/nvim-lua/plenary.nvim'
 call plug#end()
 
 " Exit.
-nmap<F9> :q<CR>
-
-" WINDOW
-" Move cursor to the window left.
-" Equivalent to Ctrl + wl
-nmap<F1> <c-w>h
-
-" WINDOW
-" Move cursor to the window above.
-" Equivalent to Ctrl + wk
-"
-nmap<F2> <c-w>k
-
-" WINDOW
-" Move cursor to the window below.
-" Equivalent to Ctrl + wk
-"
-nmap<F3> <c-w>j
-
-" WINDOW
-" Move cursor to the window right.
-" Equivalent to Ctrl + wl
-"
-nmap<F4> <c-w>l
+nmap <F9> :q<CR>
 
 " WINDOW
 " This adjust the width of pane to the right.
