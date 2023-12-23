@@ -27,36 +27,68 @@ Plug 'https://github.com/fannheyward/telescope-coc.nvim'
 Plug 'https://github.com/nvim-lua/plenary.nvim'
 call plug#end()
 
-" * Exit.
+" Exit.
 nmap<F9> :q<CR>
 
-" * This is for the Ctrl + w<
-" * This adjust the width of pane to the right.
+" WINDOW
+" Move cursor to the window left.
+" Equivalent to Ctrl + wl
+nmap<F1> <c-w>h
+
+" WINDOW
+" Move cursor to the window above.
+" Equivalent to Ctrl + wk
+"
+nmap<F2> <c-w>k
+
+" WINDOW
+" Move cursor to the window below.
+" Equivalent to Ctrl + wk
+"
+nmap<F3> <c-w>j
+
+" WINDOW
+" Move cursor to the window right.
+" Equivalent to Ctrl + wl
+"
+nmap<F4> <c-w>l
+
+" WINDOW
+" This adjust the width of pane to the right.
+" This is for the Ctrl + w<
 nmap <F8> <c-w><
 
-" * This is for the Ctrl + w>
-" * This adjust the width of the pane to the left.
+" WINDOW
+" This adjust the width of the pane to the left.
+" This is for the Ctrl + w>
 nmap <F7> <c-w>>
 
-" * NERDTREE: Toggle the nerdtree.
+" NERDTREE
+" Toggle the nerdtree.
 nnoremap <C-t> :NERDTreeToggle<CR>
 
-" * TELESCOPE: find the files. In keyboard just press, \ff
+" TELESCOPE
+" Find the files.
+" Equivalent to \ff
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
 
-" * COC: Use <space>-d to show the definition.
+" DEFINITION
+" Use <space>-d to show the definition.
 nnoremap <silent><nowait> <space>d :call CocAction('jumpDefinition', v:false)<CR>
 
-" * COC: auto import on save.
+" FORMATTING
+" Auto import on save.
 autocmd BufWritePre *.go :silent call CocAction('runCommand', 'editor.action.organizeImport')
 
-" * COC: Use <tab> to trigger completion and navigate to the next complete item.
+" TAB
+" Use <tab> to trigger completion and navigate to the next complete item.
  function! CheckBackspace() abort
    let col = col('.') - 1
    return !col || getline('.')[col - 1]  =~# '\s'
  endfunction
 
-" * COC: Support for tab.
+" COC
+" Support for tab.
 inoremap <silent><expr> <Tab>
      \ coc#pum#visible() ? coc#pum#next(1) :
      \ CheckBackspace() ? "\<Tab>" :
@@ -65,10 +97,10 @@ inoremap <silent><expr> <Tab>
 let g:NERDTreeDirArrowExpandable="+"
 let g:NERDTreeDirArrowCollapsible="~"
 
-" * Disable matching parenthesis highlighting.
+" Disable matching parenthesis highlighting.
 let g:loaded_matchparen=1
 
-" * This is for the telescope setup.
+" This is for the telescope setup.
 lua << EOF
 require("telescope").setup({
   extensions = {
