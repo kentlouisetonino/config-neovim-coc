@@ -65,6 +65,7 @@ gr          : References.
 Ctrl + o    : Go back to previous file.
 \ff         : Open telescope and find files.
 \fg         : Open telescope and find a files with a specific word.
+Ctrl + t    : After opening the telescope, then open the file in new tab.
 ```
 
 
