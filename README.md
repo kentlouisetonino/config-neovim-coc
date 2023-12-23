@@ -58,8 +58,6 @@ gT    : Switch to previous tab.
 > - COC key mappings.
 ```plaintext
 gd          : Definition.
-gy          : Type definition.
-gi          : Implementation.
 gr          : References.
 Ctrl + o    : Go back to previous file.
 ```
