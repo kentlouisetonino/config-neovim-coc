@@ -53,8 +53,9 @@ nnoremap <C-t> :NERDTreeToggle<CR>
 
 " TELESCOPE
 " Find the files.
-" Equivalent to \ff
+" leader is equivalent to \
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
+nnoremap <leader>fg <cmd>Telescope live_grep<cr>
 
 " FORMATTING
 " Auto import on save.

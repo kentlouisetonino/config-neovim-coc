@@ -6,7 +6,6 @@
 
 <br />
 <br />
-<br />
 
 
 
@@ -33,7 +32,6 @@ yarn install
 yarn build
 ```
 
-<br />
 <br />
 <br />
 
@@ -64,5 +62,7 @@ gd          : Definition.
 gr          : References.
 Ctrl + o    : Go back to previous file.
 \ff         : Open telescope and find files.
+\fg         : Open telescope and find a files with a specific word.
 ```
+
 
