@@ -38,14 +38,15 @@ nmap <F8> <c-w><
 " * This adjust the width of the pane to the left.
 nmap <F7> <c-w>>
 
-" * NERDTREE: Focus back to nerdtree navigation.
-nnoremap <C-f> :NERDTreeFocus<CR>
-
 " * NERDTREE: Toggle the nerdtree.
 nnoremap <C-t> :NERDTreeToggle<CR>
 
+" * TELESCOPE: find the files. In keyboard just press, \ff
+nnoremap <leader>ff <cmd>Telescope find_files<cr>
+
 " * COC: Use <space>-d to show the definition.
 nnoremap <silent><nowait> <space>d :call CocAction('jumpDefinition', v:false)<CR>
+
 " * COC: auto import on save.
 autocmd BufWritePre *.go :silent call CocAction('runCommand', 'editor.action.organizeImport')
 
@@ -67,6 +68,7 @@ let g:NERDTreeDirArrowCollapsible="~"
 " * Disable matching parenthesis highlighting.
 let g:loaded_matchparen=1
 
+" * This is for the telescope setup.
 lua << EOF
 require("telescope").setup({
   extensions = {
