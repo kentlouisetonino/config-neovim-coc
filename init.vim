@@ -56,10 +56,6 @@ nnoremap <C-t> :NERDTreeToggle<CR>
 " Equivalent to \ff
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
 
-" DEFINITION
-" Use <space>-d to show the definition.
-nnoremap <silent><nowait> <space>d :call CocAction('jumpDefinition', v:false)<CR>
-
 " FORMATTING
 " Auto import on save.
 autocmd BufWritePre *.go :silent call CocAction('runCommand', 'editor.action.organizeImport')
