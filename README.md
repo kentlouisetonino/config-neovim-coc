@@ -11,7 +11,16 @@
 
 
 
-## Setup
+## Local Setup
+> - Setup the git remote repositories.
+```bash
+# Change mode permission and make it executable.
+chmod +x git-push-all
+
+# Push changes to all remote repository.
+./git-push-all
+```
+
 > - Run the following commands below.
 
 ```plaintext
