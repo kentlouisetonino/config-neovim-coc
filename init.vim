@@ -59,7 +59,7 @@ nnoremap <leader>fg <cmd>Telescope live_grep<cr>
 
 " FORMATTING
 " Auto import on save.
-autocmd BufWritePre *.go,*.tsx :silent call CocAction('runCommand', 'editor.action.organizeImport')
+autocmd BufWritePre *.go,*.ts,*.tsx :silent call CocAction('runCommand', 'editor.action.organizeImport')
 
 " TAB
 " Use <tab> to trigger completion and navigate to the next complete item.
